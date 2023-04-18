@@ -29,3 +29,23 @@ section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+.aside1{
+    
+    grid-area: "a1";
+}
+.main{
+    
+    grid-area: "m";
+}
+
+.aside2{
+    
+    grid-area: "a2";
+}
+
+.s1{
+    display: grid;
+    grid-template-areas: "a1" "a2" "m";
+
+
+}
