@@ -1,8 +1,24 @@
+
+body{
+    background-color: green;
+}
+
 section{
+    display: grid;
     padding: 15px;
     border: 4px solid red;
     gap: 15px;
     margin: 4px;
+}
+header{
+    text-align: center;
+    text-decoration: aqua;
+    background-color: blueviolet;
+    margin-top: 2px;
+    padding: 3em;
+}
+h2{
+    text-align: center;
 }
 .col-2{
     display: grid;
@@ -29,23 +45,44 @@ section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-.aside1{
+footer{
+    text-align: center;
+    background-color: aqua;
+    font-size: 150%;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .s1{
+        
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas:
+        "aside1" "aside2" "main";
     
-    grid-area: "a1";
-}
-.main{
     
-    grid-area: "m";
-}
-
-.aside2{
+    }
     
-    grid-area: "a2";
+}
+@media screen and (min-width: 768px) {
+    .s1{
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "aside1 aside2 main";
+    
+    
+    }
+    
+}
+@media screen and (max-width: 960px) {
+    .s1{
+        text-align: justify;
+        
+        
+
+
+    }
+    
 }
 
-.s1{
-    display: grid;
-    grid-template-areas: "a1" "a2" "m";
-
-
-}
