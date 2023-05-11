@@ -1,0 +1,102 @@
+body{
+  background-color: goldenrod;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+}
+.contact {
+	margin: 1em 0;
+}
+
+.contact fieldset{
+	border-radius: 1em;
+}
+.contact legend {
+	font-weight: 600;
+	font-size: 1.4em;
+}
+
+.contact input[type=text], 
+.contact input[type=email], 
+.contact input[type=tel], 
+.contact select{
+	width: 100%;
+	padding: .6em 1.2em;
+	margin: .5em 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: .4em;
+	box-sizing: border-box;
+	background-color: rgb(255, 251, 248);
+}
+
+.contact textarea{
+	width: 100%;
+	padding: .5em;
+	border: 1px solid #ccc;
+	border-radius: .4em;
+	background-color: rgb(255, 251, 248);
+	margin: 1em 0;
+}
+
+.contact input[type=checkbox]{
+	margin: 1em;
+}
+
+.contact input[type=submit]{
+	display: block;
+	width: 7em;
+	background-color: #1d52c5;
+	color: white;
+	padding: 1em 2em;
+	margin: auto;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
